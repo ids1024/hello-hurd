@@ -1,6 +1,5 @@
 all: hello-hurd
 
-# -nostdlib
 hello-hurd: hello-hurd.o exec_startupUser.o machUser.o processUser.c ioUser.c
 	gcc -static -nostartfiles -o $@ $^
 
