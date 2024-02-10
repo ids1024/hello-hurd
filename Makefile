@@ -20,8 +20,5 @@ processUser.c process.h: /usr/include/i386-gnu/hurd/process.defs
 ioUser.c io.h: /usr/include/i386-gnu/hurd/io.defs
 	mig $<
 
-hurd_types.h: /usr/include/i386-gnu/hurd/hurd_types.defs
-	mig $<
-
 clean:
 	rm -f exec_* mach* process* io* *.o hello-hurd
